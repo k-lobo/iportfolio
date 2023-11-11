@@ -1,0 +1,114 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: purple;
+}
+a{
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover{
+    color: aquamarine;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.back-to-stop{
+    position:fixed;
+    visibility: hidden;
+    opacity: 0px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #242424;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+.back-to-stop i{
+    font-size: 28px;
+    color: blanchedalmond;
+    line-height: 0;
+}
+.back-to-stop:hover{
+    background: #791414;
+    color: blue;
+}
+.back-to-top.active{
+    visibility: visible;
+    opacity: 1;
+}
+#header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    width:400px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    padding: 0 15px;
+    background: #00000088;
+    overflow-y:auto ;
+}
+#header .logo img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    height: 100px;
+    border-radius: 100px;
+    border: 8px solid #000000;
+}
+#header.profile h1{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    text-align-last:center;
+    font-family:"poppins" sans-serif;
+}
+#header .profile h1 a,
+#header .profile h1 a:hover{
+    color: aliceblue;
+    text-decoration: none;
+}
+#header .profile .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: #242424;
+    color: violet;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+#main {
+    margin-left: 300px;
+}
+.container,
+.container-fluid{
+    padding-left:30px;
+    padding-right: 30px;
+}
+@media (max-width: 1199px){
+     #header {
+        left: -300px;
+     }
+   #main {
+    margin-left: 0;
+   }
+   .container,
+   .container-fluid{
+    padding-left: 12px;
+    padding-right: 12px;
+   }
+}
+
+ .nav-menu {
+    
+ }
