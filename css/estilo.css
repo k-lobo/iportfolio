@@ -195,7 +195,7 @@ h1, h2, h3, h3, h4, h5, h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/hero-bg2.jpg") top center;
+    background: url("../img/fundo.jpg") top center;
     background-size: cover;
 }
 #hero::before{
@@ -255,7 +255,7 @@ section {
     overflow: hidden;
 }
 .section-bg{
-    background: #f5f8f5;
+    background: #d8ddd8;
 }
 .section-title {
     padding-bottom: 30px;
@@ -306,6 +306,7 @@ section {
     line-height: 0;
 }
 /*  Feitos  */
+
 .facts {
     padding-bottom: 30px;
 }
@@ -348,39 +349,39 @@ section {
 .facts .count-box a:hover{
     color: #1f5297;
 }
-
-/* Skills  */
+/*skills */
 .skills .progress {
     height: 60px;
     display: block;
     background: none;
-    border-radius: 0;
+    border-radius:0 ;
 }
+
 .skills .progress .skill {
     padding: 0;
-    margin: 0 0 6px 0;
+    margin:0 0 6px 0;
     text-transform: uppercase;
     display: block;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #040b14;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#040b14; 
 }
 .skills .progress .skill .val {
-    float: right;
+    float:right ;
     font-style: normal;
 }
 .skills .progress-bar-wrap{
-    background: #a0a0a3; /*cor da barra sem preenchimento */
+    background: #c3c9c4;
     height: 10px;
 }
 .skills .progress-bar {
     width: 1px;
     height: 10px;
-    transition: 0.9s;
-    background: #149ddd;
+    transition: 0,5;
+    background: #0980ca;
 }
-/* Resumo */
-.resume .resume-title {
+/* resumo*/
+.resume .resume-title{
     font-size: 26px;
     font-weight: 700;
     margin-top: 20px;
@@ -390,7 +391,7 @@ section {
 .resume .resume-item{
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #149ddd;
+    border-left: 2px solid #0980ca;
     position: relative;
 }
 .resume .resume-item h4{
@@ -398,17 +399,17 @@ section {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #050d18;
-    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #040b14;
+    margin-bottom:10px ;
 }
-.resume .resume-item h5 {
+.resume .resume-item h5{
     font-size: 16px;
-    background: #a6acb6;
+    background:#8a8b94 ;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom:10px ;
 }
 .resume .resume-item ul{
     padding-left: 20px;
@@ -416,7 +417,7 @@ section {
 .resume .resume-item ul li{
     padding-bottom: 10px;
 }
-.resume .resume-item::before{
+.resume .resume-item ::before{
     content: "";
     position: absolute;
     width: 16px;
@@ -424,10 +425,10 @@ section {
     border-radius: 50px;
     left: -9px;
     top: 0;
-    background: #cec4c3;
-    border: 2px solid #173b6c;
+    background: #d8dce2;
+    border: 2px solid #272829;
 }
-/*  portfolio  */
+/* portfloilio*/
 .portfolio .portfolio-item{
     margin-bottom: 30px;
 }
@@ -509,3 +510,141 @@ section {
     opacity: 1;
     bottom: 0;
 }
+/*portifolio detalhes / certificados */
+.portfolio-details{
+    padding-top: 40px;
+
+}
+.portfolio-details .portfolio-details-slider img {
+ width: 100%;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination{
+    margin-top: 20px;
+    position: relative;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-blulet {
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    opacity: 1;
+    border: 1px solid #2eafec;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-blulet-active {
+    background: #173b6c;
+}
+.portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(5, 13, 24, 0.08);
+}
+.portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ad2222 ;
+}
+.portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+.portfolio-details .portfolio-info ul li+li{
+    margin-top: 10px;
+}
+.portfolio-details .portfolio-descripition {
+    padding-top:30px ;
+}
+.portfolio-details .portfolio-descripition h2{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.portfolio-details .portfolio-descripition  p{
+    padding: 0;
+}
+/* FIM*/
+/*NAV-ESTRUTURAL*/
+.nav-estrutural {
+    padding: 20px 0;
+    background: #0980ca;
+
+}
+nav-estrutural h2 {
+    font-size: 26px;
+    font-weight: 300;
+
+}
+.nav-estrutural ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+.nav-estrutural ol li+li::before {
+        display: inline-block;
+        padding-left:10px ;
+        color: #122f57;
+        content: "/";
+    }
+@media (max-width: 768px){
+    .nav-estrutural .d-flex {
+        display: block !important;
+    }
+    .nav-estrutural ol{
+        display: block;
+
+    }
+    .nav-estrutural ol li {
+        display: inline-block;
+    }
+}
+
+/*fim*/
+/*========================*/
+/*serviços*/
+
+
+
+/* fim serviços */
+/*avaliaçoes*/
+
+
+
+/*fim avaliçao*/
+/*contatos*/
+
+
+/*fim contatos*/
+
+/*roda pé*/
+
+#footer {
+    padding: 15px;
+    color: #122f57;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+    background: #040b14;
+}
+#footer .copyrigth {
+    text-align: center;
+}
+#footer .creditos{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #2eafec;
+}
+@media (max-width: 1199px){
+    #footer {
+        position:static ;
+        width: auto;
+        padding-right: 20px 15px;
+    }
+}
+
