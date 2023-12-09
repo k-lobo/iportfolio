@@ -604,8 +604,50 @@ nav-estrutural h2 {
 /*fim*/
 /*========================*/
 /*serviços*/
+.services .icon-box {
+    margin-bottom:  20px;
+}
+.services .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #0980ca;
+    transition: 0.5s;
+    border: 1px solid #272829;
+}
+.services .icon i {
+    color: #fff;
+    font-size: 24px;
+    line-height: 0;
 
-
+}
+.services .icon-box:hover .icon {
+background: #fff;
+}
+.services .icon-box:hover .icon i {
+color: #149ddd;
+}
+.services .title{
+    margin-left: 80px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #122f57;
+}
+.services .title h4:hover {
+    color: #149ddd;
+    transition: 0.3s;
+}
+.services .descripition{
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #122f57;
+}
 
 /* fim serviços */
 /*avaliaçoes*/
